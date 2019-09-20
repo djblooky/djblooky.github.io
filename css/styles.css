@@ -11,7 +11,7 @@ header, footer{
 
 body{
 	font-family: sans-serif; /*set the default font for the entire site*/
-	font-size: 16pxpx;
+	font-size: 16px;
 }
 
 img {
@@ -24,6 +24,11 @@ img {
 	max-height: 100px;
 	float: left;
     margin: 10px 15px 15px 10px;
+}
+
+.project-title{
+	padding: 10px 10px 10px 10px;
+	color: white;
 }
 
 .project-links ul{
@@ -95,7 +100,6 @@ nav li a:hover {
 nav ul li {
 	flex: 1 0 auto; /* grow is set to 1 -means it will grow to fill available space, but 0 means it wont shrink, and auto is starting size default*/
 	text-align:center; /*without this the text is aligned left in the boxes*/
-	padding-right: 15px;
 	}
 
 	.container {
