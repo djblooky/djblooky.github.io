@@ -1,12 +1,17 @@
+* {
+	margin:0; /*better to use a reset like normalize.css*/
+	padding:0;
+	box-sizing:border-box; /*this will make padding and border included in widths - this is best for responsive layouts*/
+	}
+
 header, footer{
 	background-color: blue;
 	margin-bottom: 2em;
 }
 
 body{
-	background-color: green;
 	font-family: sans-serif; /*set the default font for the entire site*/
-	font-size: 20px;
+	font-size: 16pxpx;
 }
 
 img {
@@ -19,6 +24,22 @@ img {
 	max-height: 100px;
 	float: left;
     margin: 10px 15px 15px 10px;
+}
+
+.project-links ul{
+	list-style-type: none; 
+	display: flex; 
+	flex-direction:row;
+	background-color:green;
+	padding:0;
+	justify-content: space-between;
+	margin-top: 1em;
+}
+
+.project-links ul li{
+	padding-right: 10px;
+	flex: 1 0 auto;
+	text-align:center;
 }
 
 .social-links{
