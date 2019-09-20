@@ -1,0 +1,162 @@
+header, footer{
+	background-color: blue;
+	margin-bottom: 2em;
+}
+
+body{
+	background-color: green;
+	font-family: sans-serif; /*set the default font for the entire site*/
+	font-size: 20px;
+}
+
+img {
+	max-width:100%;
+	display:block;
+	}
+
+.logo{
+	max-width: 400px;
+	max-height: 100px;
+	float: left;
+    margin: 10px 15px 15px 10px;
+}
+
+.social-links{
+	float: right;
+}
+
+.social-links ul{
+	list-style-type: none; 
+	display: flex; 
+	flex-direction:row;
+	background-color:pink;
+	padding:0;
+	justify-content: space-between;
+}
+
+.social-links ul li{
+	padding-right: 10px;
+	flex: 1 0 auto;
+	text-align:center;
+}
+
+.social-links li a {
+	display: block;/*allows the whole link to be clickable, use with padding*/
+	padding: 1em; /*must use padding here to make it mobile finger friendly*/
+	text-decoration: none; /*removes link underline*/
+}
+
+/*NAV MENU STYLES - links styled at top*/
+nav{
+	float: right;
+	margin: 50px 15px 0px 10px; 
+}
+
+nav ul {
+	list-style-type: none; /*removes bullet points for the list*/
+	display: flex; /*allows flexbox to be used, li become flex items*/
+	flex-direction:row; /*sets the li to be in a row (default)*/
+	justify-content: space-between; /* spreads out the li evenly */
+	background-color:pink; /*can be removed when you are done*/
+	padding:0;
+}
+
+nav li a {
+	display: block;/*allows the whole link to be clickable, use with padding*/
+	padding: 1em; /*must use padding here to make it mobile finger friendly*/
+	text-decoration: none; /*removes link underline*/
+}
+
+nav li a:hover {
+	background-color: lightblue;
+}
+	
+nav ul li {
+	flex: 1 0 auto; /* grow is set to 1 -means it will grow to fill available space, but 0 means it wont shrink, and auto is starting size default*/
+	text-align:center; /*without this the text is aligned left in the boxes*/
+	padding-right: 15px;
+	}
+
+	.container {
+		width:80%; /*sets width*/
+		max-width:1000px; /*limits width to no more than*/
+		margin:0 auto; /* centers the element, only works with a width set*/
+		background-color: orange;
+		}
+
+section {margin-bottom: 2em; background-color: pink;}
+
+
+/* GRID RELATED STYLE */
+
+/*put this class on a div around any grid row you are making*/	
+.row {
+	padding-bottom:1em;
+}
+
+/*removes the padding from the last row when there are multiple in a section*/
+.row:last-child {
+    padding-bottom: 0; 
+    }
+
+/*clears the floats of the divs that make the grid if you put them in a row div*/    
+.row:after{
+  content: "";
+  clear: both; 
+  display: table;
+  }
+
+.half{ 
+	width:50%;
+	float:left;
+	padding: 0 .5em;
+	}
+
+.third {
+	width:33.333333%;
+	float:left;
+	padding: 0 .5em;
+}
+
+.fourth {
+	width:25%;
+	float:left;
+	padding: 0 .5em;
+}
+
+/*to create 1/3 next to 2/3 boxes use this with .three-across-even*/
+.two-thirds {
+	width:66.666666%;
+	float:left;
+	padding: 0 .5em;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*applies only to screens under 768px - mobile*/	
+@media only screen and (max-width: 768px){
+
+	.container {
+		width:95%; /*sets width*/
+		}
+
+	nav ul {
+		flex-direction:column;
+		}
+				
+	.half, .third, .fourth, .two-thirds {
+		float:none;
+		width:100%;
+		padding:0 0 1em 0;
+	}
+		
+	.row {
+		padding-bottom:0em;
+	}
+	
+	}
+/*applies only to screens btwn 769px and 992px - tablet*/	  
+@media only screen and (min-width:769px) and (max-width: 992px){
+
+	}
