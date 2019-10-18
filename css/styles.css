@@ -5,13 +5,11 @@
 }
 
 header {
-	background-color: blue;
-	margin-bottom: 2em;
+	padding-bottom: 2em;
 }
 
 footer {
-	background-color: blue;
-	margin-top: 2em;
+	padding-top: 2em;
 }
 
 body {
@@ -20,13 +18,13 @@ body {
 }
 
 p {
-	color: #4A5657;
+	color: black;
 }
 
 img {
 	display: block;
 	width: 100%;
-	height: auto;
+	min-height: auto;
 }
 
 a{
@@ -41,8 +39,8 @@ a:hover{
 .logo {
 	max-width: 30vw;
 	height: auto;
-	float: left;
-	margin: 10px 15px 15px 10px;
+	margin: auto;
+	padding-top:20px;
 }
 
 /*Home Page*/
@@ -74,17 +72,17 @@ a:hover{
 /*Footer*/
 
 .copyright {
-	float: left;
-	margin: 50px 10px 15px 10px;
+	margin: auto;
 }
 
 .copyright p {
-	color: orange;
+	color: white;
+	text-align: center;
 }
 
 .social-links {
-	float: right;
-	margin: 15px 10px 15px 10px;
+	margin: auto;
+	width: 20%;
 }
 
 .social-links ul {
@@ -92,13 +90,7 @@ a:hover{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: pink;
 	padding: 0;
-}
-
-.social-links ul li {
-	flex: 1 0 auto;
-	text-align: center;
 }
 
 .social-links li a {
@@ -106,6 +98,20 @@ a:hover{
 	padding: 1em;
 	text-decoration: none;
 }
+
+/*social icons*/
+.fa { 
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background-color: black;
+  }
+
 
 /*SLIDESHOW*/
 body {font-family: Verdana, sans-serif; margin:0}
@@ -168,8 +174,9 @@ img {vertical-align: middle;}
 /*GRID STYLE*/
 
 .container {
-	max-width: 1400px;
-	padding: 75px;
+	max-width: 50%;
+	padding-left: 75px;
+	padding-right: 75px;
 	margin: 0 auto;
 	background-color: #76D3D6;
 }
@@ -205,12 +212,7 @@ img {vertical-align: middle;}
 						 'footer';
 }
 
-.grid-header { grid-area: header; }
-.grid-main { grid-area: main; }
-.grid-footer { grid-area: footer;}
-.grid-left { grid-area: left; }
-.grid-right { grid-area: right; }
-.grid-bottom { grid-area: bottom; }
+
 
 /*Portfolio Page*/
 
@@ -269,8 +271,8 @@ img {vertical-align: middle;}
 
 /*NAV MENU STYLES - links styled at top*/
 nav {
-	float: right;
-	margin: 50px 15px 0px 10px;
+	margin: auto;
+	width: 50%;
 }
 
 nav ul {
