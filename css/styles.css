@@ -9,12 +9,15 @@ header {
 }
 
 footer {
-	padding-top: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 body {
 	font-family: sans-serif;
 	font-size: 16px;
+	background-color: lightgray;
 }
 
 p {
@@ -40,7 +43,7 @@ a:hover{
 	max-width: 30vw;
 	height: auto;
 	margin: auto;
-	padding-top:20px;
+	padding-top: 50px;
 }
 
 /*Home Page*/
@@ -175,10 +178,12 @@ img {vertical-align: middle;}
 
 .container {
 	max-width: 50%;
-	padding-left: 75px;
-	padding-right: 75px;
-	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
 	background-color: #76D3D6;
+	margin: auto;
+	
+	box-shadow: rgba(0,0,0,.2) 3px 5px 10px 3px; /*right bottom */
 }
 
 .grid-project{
@@ -227,7 +232,6 @@ img {vertical-align: middle;}
 
 .card{
 	position: relative;
-	box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 	cursor: pointer;
 }
 
@@ -272,7 +276,7 @@ img {vertical-align: middle;}
 /*NAV MENU STYLES - links styled at top*/
 nav {
 	margin: auto;
-	width: 50%;
+	max-width: auto;
 }
 
 nav ul {
@@ -306,9 +310,8 @@ nav ul li {
 /*applies only to screens under 768px - mobile*/
 @media only screen and (max-width: 955px) {
 
-	.grid-container {
-		width: 95%;
-		/*sets width*/
+	.container {
+		max-width: 95%;
 	}
 
 	.portfolio-grid{
@@ -323,6 +326,10 @@ nav ul li {
 
 /*applies only to screens btwn 769px and 992px - tablet*/
 @media only screen and (min-width:956px) and (max-width: 1400px) {
+
+	.container {
+		max-width: 80%;
+	}
 
 	.portfolio-grid{
 		grid-template-columns: auto auto;
