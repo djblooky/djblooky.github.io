@@ -24,6 +24,10 @@ p {
 	color: black;
 }
 
+h2{
+	color: white;
+}
+
 img {
 	display: block;
 	width: 100%;
@@ -85,7 +89,7 @@ a:hover{
 
 .social-links {
 	margin: auto;
-	width: 20%;
+	max-width: 12%;
 }
 
 .social-links ul {
@@ -93,12 +97,15 @@ a:hover{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0;
 }
 
-.social-links li a {
-	display: block;
-	padding: 1em;
+.social-links li{
+	/*margin: 10px;*/
+	margin: auto;
+}
+
+.social-links li a {	
+	padding: 10px; /*circle radius*/
 	text-decoration: none;
 }
 
@@ -106,13 +113,14 @@ a:hover{
 .fa { 
 	padding: 20px;
 	font-size: 30px;
-	width: 30px;
-	height: 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
 	border-radius: 50%;
 	background-color: black;
+  }
+
+  .fa:hover{
+	  background-color: gray;
   }
 
 
@@ -184,27 +192,6 @@ img {vertical-align: middle;}
 	margin: auto;
 	
 	box-shadow: rgba(0,0,0,.2) 3px 5px 10px 3px; /*right bottom */
-}
-
-.grid-project{
-	grid-template-columns: auto auto;
-	display: grid;
-	grid-gap: 10px;
-	padding: 10px;
-	grid-template-areas: 'header header'
-						 'left' 'right'
-						 'bottom''bottom'
-						 'footer footer';
-}
-
-.grid-home{
-	grid-template-columns: auto auto;
-	display: grid;
-	grid-gap: 10px;
-	padding: 10px;
-	grid-template-areas: 'header header'
-						 'left' 'right'
-						 'footer footer';
 }
 
 .grid-container {
@@ -314,7 +301,7 @@ nav ul li {
 		max-width: 95%;
 	}
 
-	.portfolio-grid{
+	.portfolio-grid, .grid-container{
 		grid-template-columns: auto;
 	}
 
