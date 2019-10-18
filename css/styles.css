@@ -17,7 +17,6 @@ footer {
 body {
 	font-family: sans-serif;
 	font-size: 16px;
-	background-color: #76D3D6;
 }
 
 p {
@@ -46,12 +45,10 @@ a:hover{
 	margin: 10px 15px 15px 10px;
 }
 
+/*Home Page*/
+
 .project-title {
 	padding: 10px 10px 10px 10px;
-}
-
-.project-links{
-	
 }
 
 .project-links ul {
@@ -73,6 +70,8 @@ a:hover{
 	font-weight: bold;
 	color: #393E3F;
 }
+
+/*Footer*/
 
 .copyright {
 	float: left;
@@ -172,6 +171,18 @@ img {vertical-align: middle;}
 	max-width: 1400px;
 	padding: 75px;
 	margin: 0 auto;
+	background-color: #76D3D6;
+}
+
+.grid-project{
+	grid-template-columns: auto auto;
+	display: grid;
+	grid-gap: 10px;
+	padding: 10px;
+	grid-template-areas: 'header header'
+						 'left' 'right'
+						 'bottom''bottom'
+						 'footer footer';
 }
 
 .grid-home{
@@ -196,9 +207,12 @@ img {vertical-align: middle;}
 
 .grid-header { grid-area: header; }
 .grid-main { grid-area: main; }
-.grid-footer { grid-area: footer; }
+.grid-footer { grid-area: footer;}
 .grid-left { grid-area: left; }
 .grid-right { grid-area: right; }
+.grid-bottom { grid-area: bottom; }
+
+/*Portfolio Page*/
 
 .portfolio-grid {
 	display: grid;
@@ -211,11 +225,46 @@ img {vertical-align: middle;}
 
 .card{
 	position: relative;
+	box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+	cursor: pointer;
+}
+
+.card:before{
+	background: none; 
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all .3s linear;
+	content: "";
+}
+
+.card:hover:before{ 
+	background: rgba(255, 255, 255, 0.4);
 }
 
 .card h2{
 	text-align: center;
 	padding-top: 10px;
+}
+
+/*Project pages*/
+.description-column{
+
+}
+
+.image-column img{
+	margin-bottom: 10px;
+}
+
+.info-box{
+	background-color: white;
+}
+
+.info-box ul{
+	list-style-type: none;
 }
 
 /*NAV MENU STYLES - links styled at top*/
