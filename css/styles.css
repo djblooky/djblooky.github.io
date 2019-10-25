@@ -16,7 +16,7 @@ footer {
 
 body {
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	background-color: hsla(181, 1%, 74%, 0.8);
 }
 
@@ -30,8 +30,8 @@ h2{
 
 img {
 	display: block;
-	width: 100%;
 	min-height: auto;
+	width: 100%;
 }
 
 a{
@@ -186,6 +186,7 @@ img {vertical-align: middle;}
 /*GRID STYLE*/
 
 .container {
+
 	max-width: 50%;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -208,6 +209,8 @@ img {vertical-align: middle;}
 /*Portfolio Page*/
 
 .portfolio-grid {
+	border: 1px solid blue;
+	height: auto;
 	display: grid;
 	/*grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));*/
 	grid-gap: 3%;
@@ -240,6 +243,30 @@ img {vertical-align: middle;}
 .card h2{
 	text-align: center;
 	padding-top: 10px;
+}
+
+/*about page*/
+
+.about-container img{
+	width: 100%;
+}
+
+.about-container:after{
+	content: "";
+	clear: both; 
+	display: table;
+	}
+
+.about-image{
+	padding-bottom: 20px;
+	width: 50%;
+	float: left;
+}
+
+.about-text{
+	padding-left: 20px;
+	width: 50%;
+	float: left;
 }
 
 /*Project pages*/
@@ -298,6 +325,7 @@ nav ul li {
 
 	.container {
 		max-width: 95%;
+		min-height: 3000px; /* revisit this to auto scale depending on how many project items*/
 	}
 
 	.portfolio-grid, .grid-container{
@@ -308,13 +336,21 @@ nav ul li {
 		flex-direction: column;
 	}
 
+	.about-text{
+		width: 100%;
+	}
+
+	.about-image{
+		width: 100%;
+	}
+
 }
 
 /*applies only to screens btwn 769px and 992px - tablet*/
 @media only screen and (min-width:956px) and (max-width: 1400px) {
 
 	.container {
-		max-width: 80%;
+		max-width: 70%;
 	}
 
 	.portfolio-grid{
