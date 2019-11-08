@@ -50,7 +50,7 @@ a:hover{
 
 .logo {
 	max-width: 30vw;
-	height: auto;
+	height: 100%;
 	margin: auto;
 	padding-top: 50px;
 }
@@ -376,10 +376,18 @@ nav ul li {
 		width: 100%;
 	}
 
+	.logo{
+		max-width: 80vw;
+	}
+
 }
 
 /*applies only to screens btwn 769px and 992px - tablet*/
 @media only screen and (min-width:956px) and (max-width: 1400px) {
+
+	.logo{
+		max-width: 40vw;
+	}
 
 	.card1, .card2, .card3, .card4, .card5, .card6{
 		height: 300px;
