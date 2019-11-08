@@ -16,6 +16,7 @@ footer {
 
 body, html{
 	height: 100%;
+	font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -30,6 +31,8 @@ p {
 
 h2{
 	color: white;
+	font-style: italic;
+	font-weight: 500;
 }
 
 img {
@@ -95,6 +98,7 @@ a:hover{
 .social-links {
 	margin: auto;
 	max-width: 12%;
+	border: solid 1px blue;
 }
 
 .social-links ul {
@@ -233,8 +237,6 @@ img {vertical-align: middle;}
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-
-
 	cursor: pointer;
 }
 
@@ -250,14 +252,34 @@ img {vertical-align: middle;}
 	content: "";
 }
 
+/*Hover color*/
 .card1:hover:before, .card2:hover:before, .card3:hover:before, .card4:hover:before, .card5:hover:before,.card6:hover:before{ 
 	background: rgba(255, 255, 255, 0.4);
 }
 
-.card h2{
+.cardText {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	text-align: center;
-	padding-top: 10px;
-}
+  }
+
+  .cardText h2{
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 5px;
+  }
+
+  .cardText p{
+	  color: white;
+	  font-size: 12px;
+	  font-weight: 200;
+  }
 
 /*Card Images*/
 
@@ -302,7 +324,7 @@ img {vertical-align: middle;}
 }
 
 .info-box{
-	background-color: white;
+	padding: 10px;
 }
 
 .info-box ul{
@@ -356,12 +378,15 @@ nav ul li {
 	/*page sizing*/
 	.container {
 		max-width: 95%;
-		min-height: 3000px; /* revisit this to auto scale depending on how many project items*/
 	}
 
-	.portfolio-grid, .grid-container{
+	.portfolio-grid{
 		grid-template-columns: auto;
 		padding-bottom: 380px;
+	}
+
+	.grid-container{
+		grid-template-columns: auto;
 	}
 
 	nav ul {
