@@ -25,14 +25,24 @@ body {
 	background-color: hsla(181, 1%, 74%, 0.8);
 }
 
-p {
+p, li {
 	color: black;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+hr{
+	border: 0.5px solid hsl(245, 42%, 15%);
 }
 
 h2{
 	color: white;
-	font-style: italic;
-	font-weight: 500;
+	text-transform: lowercase;
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.1em;
 }
 
 img {
@@ -43,11 +53,11 @@ img {
 
 a{
 	text-decoration: none;
-	color: white;
+	color: hsl(220, 39%, 28%);
 }
 
 a:hover{
-	color: #c9c9c9;
+	color: white;
 	cursor: pointer;
 }
 
@@ -116,6 +126,7 @@ a:hover{
 .social-links li a {	
 	padding: 10px; /*circle radius*/
 	text-decoration: none;
+	color: white;
 }
 
 /*social icons*/
@@ -315,8 +326,14 @@ img {vertical-align: middle;}
 }
 
 /*Project pages*/
-.description-column{
+.description-column li{
+	text-indent: 2em;
+	line-height: 1.5em;	
+}
 
+.description-column p{
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 .image-column img{
