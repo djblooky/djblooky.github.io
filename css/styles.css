@@ -108,7 +108,6 @@ a:hover{
 .social-links {
 	margin: auto;
 	max-width: 12%;
-	border: solid 1px blue;
 }
 
 .social-links ul {
@@ -350,7 +349,9 @@ img {vertical-align: middle;}
 
 /*NAV MENU STYLES - links styled at top*/
 nav {
-	margin: auto;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 20%;
 }
 
@@ -370,7 +371,7 @@ nav li a {
 }
 
 nav li a:hover {
-	color: hsl(177, 50%, 52%);
+	color: white;
 }
 
 nav ul li {
@@ -385,12 +386,33 @@ nav ul li {
 /*applies only to screens under 768px - mobile*/
 @media only screen and (max-width: 955px) {
 
+	/*navigation*/
+	nav{
+		max-width: 100%;
+	}
+
+	nav li:hover{
+		background-color: lightgray;
+		
+	}
+
+	nav li a:hover{
+		color: white;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	.social-links{
+		max-width: 30%;
+	}
+
 	/*card sizes*/
 	
 	.card1, .card2, .card3, .card4, .card5, .card6{
 		height: 400px;
 	}
-
 
 	/*page sizing*/
 	.container {
@@ -404,10 +426,6 @@ nav ul li {
 
 	.grid-container{
 		grid-template-columns: auto;
-	}
-
-	nav ul {
-		flex-direction: column;
 	}
 
 	.about-text{
@@ -426,6 +444,14 @@ nav ul li {
 
 /*applies only to screens btwn 769px and 992px - tablet*/
 @media only screen and (min-width:956px) and (max-width: 1400px) {
+
+	nav{
+		max-width: 25%;
+	}
+
+	.social-links{
+		max-width: 25%;
+	}
 
 	.logo{
 		max-width: 40vw;
