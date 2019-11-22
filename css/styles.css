@@ -150,14 +150,14 @@ a:hover {
 
 /*SLIDESHOW*/
 .mySlides {
-	display: none
+	display: none;
 }
 
 /* Slideshow container */
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
-	margin: auto;
+	margin-top:3em
 }
 
 /* Next & previous buttons */
