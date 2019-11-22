@@ -380,6 +380,10 @@ a:hover {
 }
 
 /*Project pages*/
+.description-column{
+	margin-right: 2em;
+}
+
 .description-column li {
 	text-indent: 2em;
 	line-height: 1.5em;
@@ -415,14 +419,12 @@ a:hover {
 }
 
 .documentation{
-	margin-left: auto;
-	margin-right: auto;
 	float: left;
 }
 
 .doc-column{
 	float: left;
-  	padding: 5px;
+  	padding: 10px;
 }
 
 .documentation img{
