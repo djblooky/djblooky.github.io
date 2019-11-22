@@ -14,7 +14,8 @@ footer {
 	margin-bottom: 1em;
 }
 
-body, html{
+body,
+html {
 	height: 100%;
 	font-family: 'Lato', sans-serif;
 }
@@ -25,14 +26,25 @@ body {
 	background-color: hsla(181, 1%, 74%, 0.8);
 }
 
-p {
+p,
+li {
 	color: black;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2em;
 }
 
-h2{
+hr {
+	border: 0.5px solid hsl(245, 42%, 15%);
+}
+
+h2 {
 	color: white;
-	font-style: italic;
-	font-weight: 500;
+	text-transform: lowercase;
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.1em;
 }
 
 img {
@@ -41,13 +53,13 @@ img {
 	width: 100%;
 }
 
-a{
+a {
 	text-decoration: none;
-	color: white;
+	color: hsl(220, 39%, 28%);
 }
 
-a:hover{
-	color: #c9c9c9;
+a:hover {
+	color: white;
 	cursor: pointer;
 }
 
@@ -71,7 +83,7 @@ a:hover{
 	padding: 0;
 	justify-content: space-around;
 	margin-top: 1em;
-	
+
 }
 
 .project-links ul li {
@@ -79,7 +91,7 @@ a:hover{
 	flex: 1 0 auto;
 }
 
-.project-links a{
+.project-links a {
 	font-weight: bold;
 	color: #393E3F;
 }
@@ -96,9 +108,10 @@ a:hover{
 }
 
 .social-links {
-	margin: auto;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 12%;
-	border: solid 1px blue;
 }
 
 .social-links ul {
@@ -108,69 +121,78 @@ a:hover{
 	justify-content: space-between;
 }
 
-.social-links li{
+.social-links li {
 	/*margin: 10px;*/
 	margin: auto;
 }
 
-.social-links li a {	
-	padding: 10px; /*circle radius*/
+.social-links li a {
+	padding: 10px;
+	/*circle radius*/
 	text-decoration: none;
+	color: white;
 }
 
 /*social icons*/
-.fa { 
+.fa {
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
 	background-color: black;
-  }
+}
 
-  .fa:hover{
-	  background-color: gray;
-  }
+.fa:hover {
+	background-color: gray;
+}
 
 
 /*SLIDESHOW*/
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+	display: none;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+	max-width: 1000px;
+	position: relative;
+	margin-top:3em
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0,0,0,0.4);
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.autoSlides {
+	display: none;
+	margin-top: 3em;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*SLIDESHOW FADE*/
@@ -179,17 +201,27 @@ img {vertical-align: middle;}
 	-webkit-animation-duration: 1.5s;
 	animation-name: fade;
 	animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-  }
-  
-  @keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-  }
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
 
 /*GRID STYLE*/
 
@@ -200,8 +232,9 @@ img {vertical-align: middle;}
 	padding-right: 30px;
 	background-color: hsl(177, 39%, 69%);
 	margin: auto;
-	
-	box-shadow: rgba(0,0,0,.2) 3px 5px 10px 3px; /*right bottom */
+
+	box-shadow: rgba(0, 0, 0, .2) 3px 5px 10px 3px;
+	/*right bottom */
 }
 
 .grid-container {
@@ -210,8 +243,8 @@ img {vertical-align: middle;}
 	grid-gap: 10px;
 	padding: 10px;
 	grid-template-areas: 'header'
-						 'main'
-						 'footer';
+		'main'
+		'footer';
 }
 
 /*Portfolio Page*/
@@ -227,8 +260,13 @@ img {vertical-align: middle;}
 	grid-template-columns: auto auto auto;
 }
 
-.card1, .card2, .card3, .card4, .card5, .card6{
-	
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+
 	/* Set a specific height */
 	height: 250px;
 
@@ -240,8 +278,13 @@ img {vertical-align: middle;}
 	cursor: pointer;
 }
 
-.card1:before,.card2:before,.card3:before,.card4:before,.card5:before,.card6:before{
-	background: none; 
+.card1:before,
+.card2:before,
+.card3:before,
+.card4:before,
+.card5:before,
+.card6:before {
+	background: none;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -253,7 +296,12 @@ img {vertical-align: middle;}
 }
 
 /*Hover color*/
-.card1:hover:before, .card2:hover:before, .card3:hover:before, .card4:hover:before, .card5:hover:before,.card6:hover:before{ 
+.card1:hover:before,
+.card2:hover:before,
+.card3:hover:before,
+.card4:hover:before,
+.card5:hover:before,
+.card6:hover:before {
 	background: rgba(255, 255, 255, 0.4);
 }
 
@@ -267,48 +315,65 @@ img {vertical-align: middle;}
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
-  }
+}
 
-  .cardText h2{
+.cardText h2 {
 	font-size: 20px;
 	font-weight: 600;
 	padding-bottom: 5px;
-  }
+}
 
-  .cardText p{
-	  color: white;
-	  font-size: 12px;
-	  font-weight: 200;
-  }
+.cardText p {
+	color: white;
+	font-size: 12px;
+	font-weight: 200;
+}
 
 /*Card Images*/
 
-.card1{background-image: url("../img/pizza_roll/pizza-bg.png");}
-.card2{background-image: url("../img/save_the_snacks/sts1.jpg");}
-.card3{background-image: url("../img/airpods/airpods.png");}
-.card4{background-image: url("../img/hackerjacks/ProgrammingClubHackerjacks_Logo.png");}
-.card5{background-image: url("../img/chill_jam/chill_jam.png");}
-.card6{background-image: url("../img/bit_bash/bit_bash.png");}
+.card1 {
+	background-image: url("../assets/pizza_roll/pizza-bg.png");
+}
+
+.card2 {
+	background-image: url("../assets/save_the_snacks/sts1.png");
+}
+
+.card3 {
+	background-image: url("../assets/airpods/airpods.png");
+}
+
+.card4 {
+	background-image: url("../assets/hackerjacks/ProgrammingClubHackerjacks_Logo.png");
+}
+
+.card5 {
+	background-image: url("../assets/chill_jam/chill_jam.png");
+}
+
+.card6 {
+	background-image: url("../assets/bit_bash/bit_bash.png");
+}
 
 /*about page*/
 
-.about-container img{
+.about-container img {
 	width: 100%;
 }
 
-.about-container:after{
+.about-container:after {
 	content: "";
-	clear: both; 
+	clear: both;
 	display: table;
-	}
+}
 
-.about-image{
+.about-image {
 	padding-bottom: 20px;
 	width: 50%;
 	float: left;
 }
 
-.about-text{
+.about-text {
 	padding-left: 20px;
 	width: 50%;
 	float: left;
@@ -316,24 +381,72 @@ img {vertical-align: middle;}
 
 /*Project pages*/
 .description-column{
-
+	margin-right: 2em;
 }
 
-.image-column img{
+.description-column li {
+	text-indent: 2em;
+	line-height: 1.5em;
+}
+
+.description-column p {
+	margin-top: 15px;
 	margin-bottom: 10px;
 }
 
-.info-box{
-	padding: 10px;
+.image-column img {
+	margin-bottom: 10px;
 }
 
-.info-box ul{
+.info-box {
+	padding: 10px;
+	float: left;
+}
+
+.info-box:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.half{
+	width: 50%;
+	float:left;
+}
+
+.info-box ul {
 	list-style-type: none;
 }
 
+.documentation{
+	float: left;
+}
+
+.doc-column{
+	float: left;
+  	padding: 10px;
+}
+
+.documentation img{
+	height: 150px;
+	width: 100px;
+}
+
+.documentation img:hover{
+	cursor: pointer;
+}
+
+.documentation::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
 /*NAV MENU STYLES - links styled at top*/
 nav {
-	margin: auto;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 20%;
 }
 
@@ -348,18 +461,20 @@ nav ul {
 nav li a {
 	display: block;
 	padding: 1em;
-	text-decoration: none;	
+	text-decoration: none;
 	color: rgb(53, 53, 53);
 }
 
 nav li a:hover {
-	color: hsl(177, 50%, 52%);
+	color: white;
 }
 
 nav ul li {
 	flex: 1 0 auto;
 	/* grow is set to 1 -means it will grow to fill available space, but 0 means it wont shrink, and auto is starting size default*/
 	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 
@@ -368,40 +483,62 @@ nav ul li {
 /*applies only to screens under 768px - mobile*/
 @media only screen and (max-width: 955px) {
 
-	/*card sizes*/
-	
-	.card1, .card2, .card3, .card4, .card5, .card6{
-		height: 400px;
+	/*navigation*/
+	nav {
+		max-width: 100%;
 	}
 
+	nav li:hover {
+		background-color: lightgray;
 
-	/*page sizing*/
-	.container {
-		max-width: 95%;
 	}
 
-	.portfolio-grid{
-		grid-template-columns: auto;
-		padding-bottom: 380px;
-	}
-
-	.grid-container{
-		grid-template-columns: auto;
+	nav li a:hover {
+		color: white;
 	}
 
 	nav ul {
 		flex-direction: column;
 	}
 
-	.about-text{
+	.social-links {
+		max-width: 30%;
+	}
+
+	/*card sizes*/
+
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6 {
+		height: 400px;
+	}
+
+	/*page sizing*/
+	.container {
+		max-width: 95%;
+	}
+
+	.portfolio-grid {
+		grid-template-columns: auto;
+		padding-bottom: 380px;
+	}
+
+	.grid-container {
+		grid-template-columns: auto;
+	}
+
+	.about-text {
 		width: 100%;
 	}
 
-	.about-image{
+	.about-image {
 		width: 100%;
 	}
 
-	.logo{
+	.logo {
 		max-width: 80vw;
 	}
 
@@ -410,11 +547,24 @@ nav ul li {
 /*applies only to screens btwn 769px and 992px - tablet*/
 @media only screen and (min-width:956px) and (max-width: 1400px) {
 
-	.logo{
+	nav {
+		max-width: 25%;
+	}
+
+	.social-links {
+		max-width: 25%;
+	}
+
+	.logo {
 		max-width: 40vw;
 	}
 
-	.card1, .card2, .card3, .card4, .card5, .card6{
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6 {
 		height: 300px;
 	}
 
@@ -422,7 +572,7 @@ nav ul li {
 		max-width: 70%;
 	}
 
-	.portfolio-grid{
+	.portfolio-grid {
 		grid-template-columns: auto auto;
 		padding-bottom: 5em;
 	}
