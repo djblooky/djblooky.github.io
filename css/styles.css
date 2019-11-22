@@ -396,6 +396,18 @@ a:hover {
 
 .info-box {
 	padding: 10px;
+	float: left;
+}
+
+.info-box:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.half{
+	width: 50%;
+	float:left;
 }
 
 .info-box ul {
