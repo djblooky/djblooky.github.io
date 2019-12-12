@@ -70,6 +70,19 @@ a:hover {
 	padding-top: 50px;
 }
 
+/*Div Shapes*/
+
+.circle {
+	border-radius: 50%
+  }
+
+.rounded-corners {
+	-moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -khtml-border-radius: 20px;
+   border-radius: 20px;
+}
+
 /*Home Page*/
 
 .project-title {
@@ -336,7 +349,7 @@ a:hover {
 }
 
 .card2 {
-	background-image: url("../assets/save_the_snacks/sts1.png");
+	background-image: url("../assets/save_the_snacks/sts1.jpg");
 }
 
 .card3 {
@@ -368,9 +381,19 @@ a:hover {
 }
 
 .about-image {
-	padding-bottom: 20px;
-	width: 50%;
+	background-image: url("../assets/me2.jpg");
+	/*width: 50%;*/
 	float: left;
+	border: 2px solid white;
+
+	min-width: 300px;
+	height: 300px;
+
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 .about-text {
@@ -527,16 +550,20 @@ nav ul li {
 	}
 
 	.grid-container {
-		grid-template-columns: auto;
+		grid-template-columns: auto auto
+									auto;
 	}
 
 	.about-text {
+		margin-top: 1em;
 		width: 100%;
 	}
 
-	.about-image {
-		width: 100%;
+	.about-image{
+		min-width: 200px;
+		height: 200px;
 	}
+
 
 	.logo {
 		max-width: 80vw;
