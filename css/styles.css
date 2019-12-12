@@ -55,11 +55,11 @@ img {
 
 a {
 	text-decoration: none;
-	color: hsl(220, 39%, 28%);
+	color: white;
 }
 
 a:hover {
-	color: white;
+	color: hsl(220, 39%, 28%);
 	cursor: pointer;
 }
 
@@ -68,6 +68,19 @@ a:hover {
 	height: 100%;
 	margin: auto;
 	padding-top: 50px;
+}
+
+/*Div Shapes*/
+
+.circle {
+	border-radius: 50%
+  }
+
+.rounded-corners {
+	-moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -khtml-border-radius: 20px;
+   border-radius: 20px;
 }
 
 /*Home Page*/
@@ -293,6 +306,11 @@ a:hover {
 	right: 0;
 	transition: all .3s linear;
 	content: "";
+
+	-moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -khtml-border-radius: 20px;
+   border-radius: 20px;
 }
 
 /*Hover color*/
@@ -336,7 +354,7 @@ a:hover {
 }
 
 .card2 {
-	background-image: url("../assets/save_the_snacks/sts1.png");
+	background-image: url("../assets/save_the_snacks/sts1.jpg");
 }
 
 .card3 {
@@ -357,26 +375,67 @@ a:hover {
 
 /*about page*/
 
-.about-container img {
-	width: 100%;
-}
-
-.about-container:after {
-	content: "";
-	clear: both;
-	display: table;
+.about-container{
+	float: left;
+	position: relative;
 }
 
 .about-image {
-	padding-bottom: 20px;
-	width: 50%;
+	background-image: url("../assets/me2.jpg");
+	border: 2px solid white;
+	width: 200px;
+	height: 200px;
+
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: inline-block;
+}
+
+.about-image-col{ /*wraps about image*/
 	float: left;
+	padding: 10px;
+	width: 50%;
+	text-align: right;
+}
+
+.about-social{
+	float: left;
+	padding: 10px;
+	width: 50%;
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
+	
+}
+
+.about-social li{
+	list-style-type: none;
+}
+
+.about-social img{
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.about-social a{
+	color: white;
+}
+
+.about-social a:hover{
+	color: hsl(220, 39%, 28%);
+}
+
+.social-icon{
+	height: 30px;
+	width: 30px;
 }
 
 .about-text {
-	padding-left: 20px;
-	width: 50%;
 	float: left;
+	padding: 1em 6em 2em 6em;
 }
 
 /*Project pages*/
@@ -480,8 +539,9 @@ nav ul li {
 
 /*MEDIA QUERIES*/
 
-/*applies only to screens under 768px - mobile*/
-@media only screen and (max-width: 955px) {
+/*applies only to screens under 320px - mobile*/
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 767px){
 
 	/*navigation*/
 	nav {
@@ -531,21 +591,31 @@ nav ul li {
 	}
 
 	.about-text {
+		padding: 1em;
 		width: 100%;
 	}
 
-	.about-image {
+	.about-image-col{
 		width: 100%;
+		text-align: center;
+	}
+
+	.about-social{
+		width: 100%;
+		padding-left: 3em;
+		-ms-transform: none;
+		transform: none;
 	}
 
 	.logo {
 		max-width: 80vw;
 	}
-
 }
 
-/*applies only to screens btwn 769px and 992px - tablet*/
-@media only screen and (min-width:956px) and (max-width: 1400px) {
+/*tablet*/ 
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1100px){
 
 	nav {
 		max-width: 25%;
@@ -566,6 +636,16 @@ nav ul li {
 	.card5,
 	.card6 {
 		height: 300px;
+	}
+
+	.about-text {
+		width: 100%;
+		padding: 2em;
+	}
+
+	.about-social{
+		-ms-transform: translateY(50%);
+  		transform: translateY(50%);
 	}
 
 	.container {
