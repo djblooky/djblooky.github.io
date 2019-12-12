@@ -55,11 +55,11 @@ img {
 
 a {
 	text-decoration: none;
-	color: hsl(220, 39%, 28%);
+	color: white;
 }
 
 a:hover {
-	color: white;
+	color: hsl(220, 39%, 28%);
 	cursor: pointer;
 }
 
@@ -391,16 +391,51 @@ a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	display: inline-block;
 }
 
-.left-about{ /*wraps about image*/
+.about-image-col{ /*wraps about image*/
 	float: left;
 	padding: 10px;
+	width: 50%;
+	text-align: right;
+}
+
+.about-social{
+	float: left;
+	padding: 10px;
+	width: 50%;
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
+	
+}
+
+.about-social li{
+	list-style-type: none;
+}
+
+.about-social img{
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.about-social a{
+	color: white;
+}
+
+.about-social a:hover{
+	color: hsl(220, 39%, 28%);
+}
+
+.social-icon{
+	height: 30px;
+	width: 30px;
 }
 
 .about-text {
 	float: left;
-	padding: 10px;
+	padding: 1em 6em 2em 6em;
 }
 
 /*Project pages*/
@@ -556,30 +591,31 @@ nav ul li {
 	}
 
 	.about-text {
-		margin-top: 1em;
+		padding: 1em;
 		width: 100%;
 	}
 
-	.left-about{
+	.about-image-col{
 		width: 100%;
 		text-align: center;
 	}
 
-	.about-image{	
-		display: inline-block;
+	.about-social{
+		width: 100%;
+		padding-left: 3em;
+		-ms-transform: none;
+		transform: none;
 	}
-
 
 	.logo {
 		max-width: 80vw;
 	}
-
 }
 
-/*tablet - regular iPad broken*/ 
+/*tablet*/ 
 @media only screen 
 and (min-width : 768px) 
-and (max-width : 1024px){
+and (max-width : 1100px){
 
 	nav {
 		max-width: 25%;
@@ -603,12 +639,13 @@ and (max-width : 1024px){
 	}
 
 	.about-text {
-		margin-top: 1em;
 		width: 100%;
+		padding: 2em;
 	}
 
-	.left-about{
-		width: 100%;
+	.about-social{
+		-ms-transform: translateY(50%);
+  		transform: translateY(50%);
 	}
 
 	.container {
