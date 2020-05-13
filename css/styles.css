@@ -429,7 +429,8 @@ a:hover {
 }
 
 .about-social a{
-	color: white;
+	color: black;
+	text-decoration: none;
 }
 
 .about-social a:hover{
