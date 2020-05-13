@@ -40,7 +40,7 @@ hr {
 }
 
 h2 {
-	color: white;
+	color: black;
 	text-transform: lowercase;
 	font-weight: 700;
 	font-size: 34px;
@@ -358,7 +358,7 @@ a:hover {
 /*Card Images*/
 
 .card1 {
-	background-image: url("../assets/pizza_roll/pizza-bg.png");
+	background-image: url("../assets/pizza_roll/game1.jpg");
 }
 
 .card2 {
@@ -366,7 +366,7 @@ a:hover {
 }
 
 .card3 {
-	background-image: url("../assets/airpods/airpods.png");
+	background-image: url("../assets/chipper/chipper.png");
 }
 
 .card4 {
