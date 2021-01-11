@@ -357,11 +357,11 @@ a:hover {
 /*Card Images*/
 
 .card1 {
-	background-image: url("../assets/pizza_roll/game1.jpg");
+	background-image: url("../assets/the_way_out/thumb.gif");
 }
 
 .card2 {
-	background-image: url("../assets/save_the_snacks/sts1.jpg");
+	background-image: url("../assets/unleash_the_light/title.png");
 }
 
 .card3 {
@@ -369,15 +369,15 @@ a:hover {
 }
 
 .card4 {
-	background-image: url("../assets/hell-yeah-burgers/banner3.png");
+	background-image: url("../assets/brain_agents/brain_agents_1.png");
 }
 
 .card5 {
-	background-image: url("../assets/chill_jam/chill_jam.png");
+	background-image: url("../assets/witchs_brew/thumb.png");
 }
 
 .card6 {
-	background-image: url("../assets/bit_bash/bit_bash.png");
+	background-image: url("../assets/");
 }
 
 /*about page*/
