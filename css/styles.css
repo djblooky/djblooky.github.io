@@ -22,7 +22,7 @@ html {
 
 body {
 	font-size: 14px;
-	background-image: image();
+	background-color: #a8dadc;
 }
 
 p,
@@ -250,7 +250,7 @@ a:hover {
 	padding-left: 30px;
 	padding-right: 30px;
 	border: 1px solid black;
-	background-color: white;
+	background-color: #e9c46a;
 	margin: auto;
 
 	box-shadow: rgba(0, 0, 0, .2) 3px 5px 10px 3px;
