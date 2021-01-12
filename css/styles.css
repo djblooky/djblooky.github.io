@@ -38,7 +38,6 @@ hr {
 
 h2 {
 	color: black;
-	text-transform: lowercase;
 	font-weight: 700;
 	font-size: 34px;
 	letter-spacing: 0.1em;
@@ -563,10 +562,6 @@ nav ul li {
 	/*navigation*/
 	nav {
 		max-width: 100%;
-	}
-
-	nav li:hover {
-		background-color: lightgray;
 	}
 
 	nav li a:hover {
