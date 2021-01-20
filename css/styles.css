@@ -463,7 +463,28 @@ a:hover {
 .description-column p {
 	margin-top: 15px;
 	margin-bottom: 10px;
+	font-size: xx-large;
 }
+
+.description-column h2{
+	font-size: 50px;
+}
+
+.description-column h3{
+ 	font-size: xx-large;
+}
+
+.description-column a{
+	color: #9e8649;
+	text-decoration: none;
+}
+
+.description-column a:hover{
+	text-decoration: underline;
+	color: #7c6f40;
+}
+
+
 
 .image-column img {
 	margin-bottom: 10px;
