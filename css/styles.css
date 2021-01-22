@@ -365,7 +365,7 @@ a:hover {
 }
 
 .card3 {
-	background-image: url("../assets/chipper/Chipper_Level1GIF_CharliePhillips.gif");
+	background-image: url("../assets/chipper/Level3GIF1_Chipper_CharliePhillips.gif");
 }
 
 .card4 {
@@ -484,10 +484,9 @@ a:hover {
 	color: #7c6f40;
 }
 
-
-
 .image-column img {
 	margin-bottom: 10px;
+	width: 30vw;
 }
 
 .info-box {
@@ -643,6 +642,10 @@ nav ul li {
 	.logo {
 		max-width: 80vw;
 	}
+
+	.image-column img{
+		width: 100%;
+	}
 }
 
 /*tablet*/ 
@@ -686,12 +689,16 @@ and (max-width : 1620px){
 	}
 
 	.container {
-		max-width: 70%;
+		max-width: 80%;
 	}
 
 	.portfolio-grid {
 		grid-template-columns: auto auto;
 		padding-bottom: 5em;
+	}
+
+	.image-column img{
+		width: 30vw;
 	}
 
 }
