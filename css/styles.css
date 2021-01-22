@@ -486,7 +486,8 @@ a:hover {
 
 .image-column img {
 	margin-bottom: 10px;
-	width: 30vw;
+	max-width: 30vw;
+	min-width: 25vw;
 }
 
 .info-box {
