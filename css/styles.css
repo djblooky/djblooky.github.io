@@ -419,6 +419,7 @@ a:hover {
 
 .about-social li{
 	list-style-type: none;
+	font-size: x-large;
 }
 
 .about-social img{
@@ -445,6 +446,10 @@ a:hover {
 	float: left;
 	padding: 1em 8em 2em 8em;
 	font-size: 20px;
+}
+
+.about-text p{
+	font-size: xx-large;
 }
 
 /*Project pages*/
@@ -577,7 +582,7 @@ nav ul li {
 @media only screen and (max-width: 767px){
 
 	.about-social a, p, li{
-		font-size: 1rem;
+		font-size: x-large;
 	}
 
 	/*navigation*/
@@ -628,6 +633,10 @@ nav ul li {
 		width: 100%;
 	}
 
+	.about-text p{
+		font-size: x-large;
+	}
+
 	.about-image-col{
 		width: 100%;
 		text-align: center;
@@ -655,7 +664,7 @@ and (min-width : 768px)
 and (max-width : 1620px){
 
 	.about-social a, p, li{
-		font-size: 1rem;
+		font-size: large;
 	}
 
 	nav {
@@ -680,8 +689,11 @@ and (max-width : 1620px){
 	}
 
 	.about-text {
-		width: 100%;
-		padding: 2em;
+		width: 80vw;
+	}
+
+	.about-text p{
+		font-size: x-large;
 	}
 
 	.about-social{
