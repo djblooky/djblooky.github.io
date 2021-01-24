@@ -610,7 +610,8 @@ nav ul li {
 	.card4,
 	.card5,
 	.card6 {
-		height: 400px;
+		min-height: 250px;
+		max-height: 400px;
 	}
 
 	/*page sizing*/
@@ -620,7 +621,7 @@ nav ul li {
 
 	.portfolio-grid {
 		grid-template-columns: auto;
-		padding-bottom: 160px;
+		padding-bottom: 80px;
 		grid-gap: 1%;
 	}
 
