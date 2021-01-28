@@ -51,7 +51,7 @@ img {
 
 a {
 	text-decoration: underline;
-	color: rgb(23, 155, 231);
+	color: rgb(0, 0, 0);
 }
 
 a:hover {
@@ -477,16 +477,6 @@ a:hover {
 
 .description-column h3{
  	font-size: xx-large;
-}
-
-.description-column a{
-	color: #9e8649;
-	text-decoration: none;
-}
-
-.description-column a:hover{
-	text-decoration: underline;
-	color: #7c6f40;
 }
 
 .image-column img {
