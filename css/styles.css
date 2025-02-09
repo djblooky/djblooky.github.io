@@ -244,7 +244,7 @@ a:hover {
 
 .container {
 
-	max-width: 50%;
+	max-width: 60%;
 	padding-left: 30px;
 	padding-right: 30px;
 	margin: auto;
@@ -468,15 +468,15 @@ a:hover {
 .description-column p {
 	margin-top: 15px;
 	margin-bottom: 10px;
-	font-size: xx-large;
+	font-size: large;
 }
 
 .description-column h2{
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .description-column h3{
- 	font-size: xx-large;
+ 	font-size: x-large;
 }
 
 .image-column img {
@@ -497,7 +497,7 @@ a:hover {
 }
 
 .half{
-	width: 50%;
+	width: 60%;
 	float:left;
 }
 
